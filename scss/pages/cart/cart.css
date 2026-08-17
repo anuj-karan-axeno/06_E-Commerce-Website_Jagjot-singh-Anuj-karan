@@ -385,6 +385,11 @@
     padding: 1em 2em;
   }
 }
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
+}
 
 .button--primary {
   color: #FFFFFF;

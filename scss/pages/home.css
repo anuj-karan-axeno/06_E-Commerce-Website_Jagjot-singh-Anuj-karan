@@ -136,6 +136,11 @@
     padding: 1em 2em;
   }
 }
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
+}
 
 .button--primary {
   color: #FFFFFF;
@@ -455,13 +460,19 @@ body {
 
 .hero {
   position: relative;
+  background: #f2f0f1;
+}
+@media (max-width: 768px) {
+  .hero {
+    min-height: 110vh;
+  }
 }
 
 .hero__banner-picture {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   aspect-ratio: 3/4;
 }
 .hero__banner-picture img {
@@ -470,18 +481,26 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 768px) {
+  .hero__banner-picture {
+    height: -moz-fit-content;
+    height: fit-content;
+    bottom: 0;
+  }
+}
 
 .hero__content-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  padding: 6.25em 90px;
+  padding: 4.25em 90px;
   gap: 2em;
+  z-index: 10;
 }
 @media (max-width: 992px) {
   .hero__content-container {
-    padding: 6.25em 16px;
+    padding: 4.25em 16px;
   }
 }
 @media (max-width: 768px) {
@@ -499,6 +518,7 @@ body {
   align-items: start;
   gap: 3em;
   flex: 1;
+  z-index: 10;
 }
 
 .hero__intro {
@@ -517,7 +537,7 @@ body {
 .hero__heading {
   font-size: 4em;
   line-height: 1em;
-  font-weight: 800;
+  font-weight: 1000;
 }
 @media (max-width: 992px) {
   .hero__heading {
@@ -542,12 +562,17 @@ body {
 
 .hero__stats {
   display: flex;
-  flex-direction: space-between;
-  justify-content: start;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
   list-style: none;
   gap: 2em;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .hero__stats {
+    align-items: center;
+  }
 }
 
 .hero__stat-number {
@@ -574,11 +599,18 @@ body {
 .hero__decoration {
   flex: 1;
   position: relative;
+  z-index: 10;
 }
 
 .hero__star-icon_1 {
   position: absolute;
   top: 50%;
+}
+@media (max-width: 768px) {
+  .hero__star-icon_1 {
+    top: 8em;
+    left: 0.5em;
+  }
 }
 
 .hero__star-icon_2 {
@@ -586,6 +618,12 @@ body {
   right: -1em;
   top: 0;
   width: 5em;
+}
+@media (max-width: 768px) {
+  .hero__star-icon_2 {
+    right: 0.5em;
+    top: 1em;
+  }
 }
 
 .brands {
