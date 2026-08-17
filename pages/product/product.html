@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/scss/pages/product/product.css">
+</head>
+
+<body>
+
+
+    <header class="header"></header>
+
+    <div class="product-page-container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="/" class="breadcrumb__link">Home</a>
+                    <img src="/assests/icons/chevron_right.svg" alt="chevron_right">
+                </li>
+                <li class="breadcrumb__item">
+                    <a href="/shop" class="breadcrumb__link">Shop</a>
+                    <img src="/assests/icons/chevron_right.svg" alt="chevron_right">
+                </li>
+                <li class="breadcrumb__item">
+                    <a href="/men" class="breadcrumb__link">Men</a>
+                    <img src="/assests/icons/chevron_right.svg" alt="chevron_right">
+                </li>
+                <li class="breadcrumb__item breadcrumb__item--current" aria-current="page">T-shirts</li>
+            </ul>
+        </nav>
+        <div class="product-detail__layout">
+            <div class="product-detail__gallery">
+                <ul class="product-detail__thumbnails">
+
+                </ul>
+
+                <div class="product-detail__main-image">
+                    <img src="/assests/product_images/black_tshirt.png" alt="One Life Graphic T-shirt"
+                        class="product-detail__image">
+                </div>
+            </div>
+
+            <div class="product-detail__info">
+                <div class="product-detail__info__group">
+
+                    <h1 class="product-detail__title"></h1>
+
+                    <div class="product-detail__rating" aria-label="4.5 out of 5 stars">
+                        <span class="product-detail__stars">★★★★☆</span>
+                        <span class="product-detail__rating-value"></span>
+                    </div>
+
+                    <div class="product-detail__price">
+                        <span class="product-detail__price-current"></span>
+                        <span class="product-detail__price-original"></span>
+                        <span class="product-detail__discount-badge"></span>
+                    </div>
+
+                    <p class="product-detail__description"></p>
+
+                </div>
+                <hr class="product-detail__divider">
+
+                <div class="product-detail__info__group">
+                    <p class="product-detail__section-label">Select Colors</p>
+                    <div class="product-detail__color-options">
+
+                    </div>
+                </div>
+
+                <hr class="product-detail__divider">
+
+                <div class="product-detail__info__group">
+                    <p class="product-detail__section-label">Choose Size</p>
+                    <div class="product-detail__size-options">
+
+                    </div>
+                </div>
+                <hr class="product-detail__divider">
+
+                <div class="product-detail__actions">
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-selector__button quantity-selector__button--decrease"
+                            aria-label="Decrease quantity">−</button>
+                        <span class="quantity-selector__value">1</span>
+                        <button type="button" class="quantity-selector__button quantity-selector__button--increase"
+                            aria-label="Increase quantity">+</button>
+                    </div>
+
+                    <button type="button" class="button button--primary product-detail__add-to-cart">Add to
+                        Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <ul class="tabs__list">
+                <li class="tabs__tab">Product Details</li>
+                <li class="tabs__tab tabs__tab--active">Rating &amp; Reviews</li>
+                <li class="tabs__tab">FAQs</li>
+            </ul>
+        </div>
+
+        <div class="reviews-header">
+            <div class="reviews-header__title-wrap">
+                <h2 class="reviews-header__title">All Reviews <span>(451)</span></h2>
+            </div>
+
+            <div class="reviews-header__controls">
+                <button class="reviews-header__filter reviews-header__filter--toggle" type="button"
+                    aria-label="Toggle review filter">
+                    <img class="reviews-header__filter-icon" src="/assests/icons/filter_icon.svg"></img>
+                </button>
+                <button class="reviews-header__filter reviews-header__filter--active" type="button">Latest</button>
+                <button class="reviews-header__button" type="button">Write a Review</button>
+            </div>
+        </div>
+
+        <div class="reviews-grid">
+            <article class="review-card">
+                <div class="review-card__top">
+                    <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
+                    <button class="review-card__menu" type="button" aria-label="More options">•••</button>
+                </div>
+
+                <div class="review-card__user">
+                    <h3>Samantha D.</h3>
+
+                    <img src="/assests/icons/circular-right_icon.svg" alt="correct">
+                </div>
+
+                <p class="review-card__text">"I absolutely love this t-shirt! The design is unique and the fabric feels
+                    so comfortable. It’s soft, breathable, and the fit is perfect. I’ve received so many compliments on
+                    it."</p>
+
+                <p class="review-card__date">Posted on August 14, 2023</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__top">
+                    <div class="review-card__stars" aria-label="4 stars">★★★★☆</div>
+                    <button class="review-card__menu" type="button" aria-label="More options">•••</button>
+                </div>
+
+                <div class="review-card__user">
+                    <h3>Alex M.</h3>
+                    <img src="/assests/icons/circular-right_icon.svg" alt="correct">
+                </div>
+
+                <p class="review-card__text">"I bought this shirt for a casual event, and the quality exceeded my
+                    expectations. The color is rich, and the print is clean and sharp."</p>
+
+                <p class="review-card__date">Posted on August 15, 2023</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__top">
+                    <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
+                    <button class="review-card__menu" type="button" aria-label="More options">•••</button>
+                </div>
+
+                <div class="review-card__user">
+                    <h3>Ethan R.</h3>
+                    <img src="/assests/icons/circular-right_icon.svg" alt="correct">
+                </div>
+
+                <p class="review-card__text">"This T-shirt is a must-have for anyone who appreciates good design. The
+                    material feels premium, and the fit is flattering without being too tight."</p>
+
+                <p class="review-card__date">Posted on August 16, 2023</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__top">
+                    <div class="review-card__stars" aria-label="4 stars">★★★★☆</div>
+                    <button class="review-card__menu" type="button" aria-label="More options">•••</button>
+                </div>
+
+                <div class="review-card__user">
+                    <h3>Olivia P.</h3>
+                    <img src="/assests/icons/circular-right_icon.svg" alt="correct">
+                </div>
+
+                <p class="review-card__text">"The fabric is soft, and the print looks great. It feels like a higher-end
+                    brand product, and the fit and feel make it easy to wear all day."</p>
+
+                <p class="review-card__date">Posted on August 17, 2023</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__top">
+                    <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
+                    <button class="review-card__menu" type="button" aria-label="More options">•••</button>
+                </div>
+
+                <div class="review-card__user">
+                    <h3>Liam K.</h3>
+                    <img src="/assests/icons/circular-right_icon.svg" alt="correct">
+                </div>
+
+                <p class="review-card__text">"This is my second purchase, and it still looks amazing. The shirt is
+                    lightweight but feels sturdy, and the design gives it a premium look."</p>
+
+                <p class="review-card__date">Posted on August 18, 2023</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-card__top">
+                    <div class="review-card__stars" aria-label="4 stars">★★★★☆</div>
+                    <button class="review-card__menu" type="button" aria-label="More options">•••</button>
+                </div>
+
+                <div class="review-card__user">
+                    <h3>Ava H.</h3>
+                    <img src="/assests/icons/circular-right_icon.svg" alt="correct">
+                </div>
+
+                <p class="review-card__text">"The shirt feels comfortable and stylish. I like how the fabric drapes and
+                    how the design stands out without being too loud."</p>
+
+                <p class="review-card__date">Posted on August 19, 2023</p>
+            </article>
+        </div>
+
+        <div class="reviews-load-more">
+            <button type="button" class="button button--secondary reviews-load-more__button">Load More Reviews</button>
+        </div>
+
+    </div>
+    <section class="product-section ">
+        <h2 class="product-section__heading">YOU MIGHT ALSO LIKE THIS</h2>
+
+        <ul class="products-container might-like">
+
+
+        </ul>
+
+
+    </section>
+    <section class="footer-container"></section>
+
+    <script type="module" src="./product.js"></script>
+    <script type="module" src="../../js/auth.js"></script>
+</body>
+
+</html>

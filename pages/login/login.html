@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SHOP.CO</title>
+    <link rel="stylesheet" href="../../scss/pages/login/login.css">
+</head>
+
+<body>
+    <header class="header"></header>
+
+    <main class="auth">
+        <div class="auth-form-wrapper">
+            <h1 class="auth-form__title">Log in to your account</h1>
+            <p class="auth-form__subtitle">Welcome back! Please enter your details.</p>
+
+            <form class="auth-form" novalidate>
+                <div class="auth-form__field">
+                    <label for="email" class="auth-form__label">Email</label>
+                    <input type="email" id="email" name="email" class="auth-form__input" placeholder="Enter your email" required>
+                </div>
+
+                <div class="auth-form__field">
+                    <label for="password" class="auth-form__label">Password</label>
+                    <input type="password" id="password" name="password" class="auth-form__input" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="auth-form__submit">Log In</button>
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="./login.js"></script>
+</body>
+
+</html>

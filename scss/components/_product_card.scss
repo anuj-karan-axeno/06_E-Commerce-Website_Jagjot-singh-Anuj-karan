@@ -1,0 +1,37 @@
+@use '../abstracts/mixins' as mixins;
+
+.product-card {
+
+    @include mixins.center($flexDirection: column,$alignItems:start);
+    gap: 1em;
+    width: fit-content;
+
+}
+
+.product-card__content {
+    width: 245px;
+    list-style: none;
+    @include mixins.center($flexDirection: column, $alignItems: start);
+    gap: .5em;
+}
+
+.product-card__image {
+    border-radius: 1.25em;
+    width: 100%;
+
+}
+
+.product-card__title {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.product-card__rating {
+    font-size: 0.875em;
+    font-weight: 400;
+}
+
+.product-card__price {
+    font-size: 1.4em;
+    font-weight: 700;
+}

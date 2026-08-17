@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../scss/pages/cart/cart.css">
+</head>
+
+<body>
+    <header class="header"></header>
+    <div class="cart-page-container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="/" class="breadcrumb__link">Home</a>
+                    <img src="/assests/icons/chevron_right.svg" alt="chevron_right">
+                </li>
+                <li class="breadcrumb__item breadcrumb__item--current" aria-current="page">Cart</li>
+            </ul>
+        </nav>
+        <section class="cart">
+            <h1 class="cart__title">YOUR CART</h1>
+
+            <div class="cart__layout">
+
+                <ul class="cart__items">
+                </ul>
+
+                <aside class="order-summary">
+                    <h2 class="order-summary__title">Order Summary</h2>
+
+                    <div class="order-summary__row">
+                        <span class="order-summary__label">Subtotal</span>
+                        <span class="order-summary__value order-summary__subtotal"></span>
+                    </div>
+                    <div class="order-summary__row order-summary__discount-row" hidden>
+                        <span class="order-summary__label">Discount (-<span
+                                class="order-summary__discount-percent"></span>%)</span>
+                        <span
+                            class="order-summary__value order-summary__value--discount order-summary__discount-amount"></span>
+                    </div>
+
+                    <div class="order-summary__row">
+                        <span class="order-summary__label">Delivery Fee</span>
+                        <span class="order-summary__value order-summary__delivery"></span>
+                    </div>
+
+                    <hr class="order-summary__divider">
+
+                    <div class="order-summary__row order-summary__row--total">
+                        <span class="order-summary__label">Total</span>
+                        <span class="order-summary__value order-summary__total"></span>
+                    </div>
+
+                    <div class="order-summary__promo">
+                        <input type="text" placeholder="Add promo code" class="order-summary__promo-input">
+                        <button type="button" class="order-summary__promo-button">Apply</button>
+                    </div>
+                    <p class="order-summary__promo-error"></p>
+
+                    <button type="button" class="order-summary__checkout">
+                        Go to Checkout
+                        <img src="../../assests/icons/right-arrow-big-white.svg" alt="">
+                    </button>
+                </aside>
+
+            </div>
+    </div>
+    </section>
+    <section class="footer-container">
+
+    </section>
+    <div class="modal-overlay" id="checkoutModal" hidden>
+        <div class="modal">
+            <img src="/assests/icons/circular-right_icon.svg" alt="" class="modal__icon">
+            <h2 class="modal__title" id="modalTitle">Order Confirmed!</h2>
+            <p class="modal__message">Thank you for your purchase. Your order has been placed successfully.</p>
+            <button type="button" class="button button--primary modal__close">Continue Shopping</button>
+        </div>
+    </div>
+    <script type="module" src="./cart.js"></script>
+    <script type="module" src="../../js/auth.js"></script>
+</body>
+
+</html>
