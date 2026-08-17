@@ -144,14 +144,12 @@
   justify-content: center;
   align-items: center;
   gap: 0.25em;
-}
-.breadcrumb__item a {
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   font-size: 1em;
 }
 @media (max-width: 768px) {
-  .breadcrumb__item a {
+  .breadcrumb__item {
     font-size: 0.875em;
   }
 }
@@ -241,6 +239,7 @@
   align-self: stretch;
 }
 .quantity-selector button {
+  cursor: pointer;
   background: transparent;
   border: none;
   font-size: 1.5em;
@@ -691,7 +690,7 @@ body {
   padding: 0.75em 1.5em;
   background-color: #F0F0F0;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 1em;
+  font-size: 0.9em;
   border: 0;
   border-radius: 2.5em;
 }
@@ -717,6 +716,7 @@ body {
 
 .product-detail__add-to-cart {
   flex: 1;
+  cursor: pointer;
 }
 
 .tabs {

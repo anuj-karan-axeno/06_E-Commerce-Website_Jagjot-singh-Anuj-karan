@@ -1,5 +1,6 @@
 @use '../abstracts/mixins' as mixins;
 @use '../abstracts/variables' as variables;
+
 .breadcrumb {
     padding: 1.5em 0;
 }
@@ -16,15 +17,15 @@
     @include mixins.center;
     gap: .25em;
 
-    a {
-        color: variables.$medium_grey_color;
-        text-decoration: none;
-        font-size: 1em;
 
-        @media (max-width:768px) {
-            font-size: .875em;
+    color: variables.$medium_grey_color;
+    text-decoration: none;
+    font-size: 1em;
 
-        }
+    @media (max-width:768px) {
+        font-size: .875em;
+
     }
+
 
 }

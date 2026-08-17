@@ -181,7 +181,7 @@ body {
     padding: .75em 1.5em;
     background-color: variables.$dress_style_bg_color;
     color: variables.$medium_grey_color;
-    font-size: 1em;
+    font-size: .9em;
     border: 0;
     border-radius: 2.5em;
     
@@ -208,6 +208,7 @@ body {
 
 .product-detail__add-to-cart {
     flex: 1;
+    cursor: pointer;
 }
 
 .tabs {

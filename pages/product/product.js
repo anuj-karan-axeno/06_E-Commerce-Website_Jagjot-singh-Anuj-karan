@@ -46,7 +46,7 @@ const might_like_container_element = document.querySelector('.might-like')
 header_element.appendChild(createNavbar());
 footer_element.appendChild(createFooter());
 
-products.forEach((item)=>{
+products.forEach((item) => {
     might_like_container_element.append(createProductCard(item.id, item.poster_image))
 })
 
@@ -122,6 +122,7 @@ function addToCart() {
         if (!Array.isArray(cart)) {
             cart = [];
         }
+        alert("Item successfully added to cart :)")
     } catch (error) {
         cart = [];
     }
