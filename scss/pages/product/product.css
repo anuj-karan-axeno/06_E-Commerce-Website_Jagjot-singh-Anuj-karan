@@ -38,7 +38,7 @@
 }
 
 .navbar__brand-logo {
-  width: 160px;
+  width: 140px;
 }
 @media (max-width: 992px) {
   .navbar__brand-logo {
@@ -53,8 +53,8 @@
   flex-shrink: 0;
 }
 .navbar__links li {
-  font-weight: 200;
-  font-size: 1em;
+  font-weight: 400;
+  font-size: 0.9em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -86,21 +86,21 @@
   width: 522px;
 }
 .navbar__search img {
-  width: 1.25em;
+  width: 1.2em;
 }
 .navbar__search input {
   outline: 0;
   border: 0;
   background: transparent;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 200 !important;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.3019607843);
 }
 .navbar__search input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.3019607843);
 }
 .navbar__search input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.3019607843);
 }
 @media (max-width: 992px) {
   .navbar__search {
@@ -146,7 +146,7 @@
   gap: 0.25em;
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 @media (max-width: 768px) {
   .breadcrumb__item {

@@ -1,6 +1,7 @@
 @use '../abstracts/mixins' as mixins;
 @use '../abstracts/variables' as variables;
 
+
 .breadcrumb {
     padding: 1.5em 0;
 }
@@ -20,7 +21,7 @@
 
     color: variables.$medium_grey_color;
     text-decoration: none;
-    font-size: 1em;
+    font-size: .9em;
 
     @media (max-width:768px) {
         font-size: .875em;

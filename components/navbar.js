@@ -50,12 +50,27 @@ export function createNavbar() {
 
                     <img src="/assests/icons/cart_icon.svg" alt="cart">
                 </a>
-                <a href="">
+                <a href="/pages/login/login.html" class="navbar__profile-link">
                 
                 <img src="/assests/icons/profile_icon.svg" alt="profile">
                 </a>
     </div>
     </div>
                 `
-                return navbar;
+
+    const profileLink = navbar.querySelector('.navbar__profile-link');
+    const isLoggedIn = localStorage.getItem('authState') === 'logged_in';
+
+    if (isLoggedIn) {
+        profileLink.setAttribute('aria-label', 'Logout');
+        profileLink.title = 'Logout';
+
+        profileLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            localStorage.removeItem('authState');
+            window.location.href = '/pages/login/login.html';
+        });
+    }
+
+    return navbar;
 }
