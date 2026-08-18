@@ -10,15 +10,15 @@
 
         padding: 2.5em 0;
     }
-}
 
-.product-section__heading {
+    &__heading {
 
-    font-weight: 700;
-    font-size: 3em;
+        font-weight: 700;
+        font-size: 3em;
 
-    @media (max-width:992px) {
-        font-size: 2em;
+        @media (max-width:992px) {
+            font-size: 2em;
+        }
     }
 }
 
@@ -28,15 +28,6 @@
     @include mixins.center($justifyContent: start);
     gap: 1.25em;
     padding: 0 variables.$container_padding_x_desktop;
-
-    li {
-        list-style: none;
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-    }
 
     @media (max-width:992px) {
         padding: 0 variables.$container_padding_x_mobile;

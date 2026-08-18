@@ -6,26 +6,27 @@
     border-radius: 4em;
     border: 0;
     font-size: 1em;
+
+    &--primary {
+        color: variables.$secondary_color;
+        background-color: variables.$primary_color;
+
+    }
+
+    &--secondary {
+        border: 1px solid variables.$light_grey_color;
+        background: transparent;
+    }
+
+    &--normal {
+        background-color: variables.$medium_grey_color;
+    }
+
     @media (max-width:992px) {
         padding: 1em 2em;
     }
-    
+
     @media (max-width:768px) {
         width: 100%;
     }
-}
-
-.button--primary {
-    color: variables.$secondary_color;
-    background-color: variables.$primary_color;
-
-}
-
-.button--secondary {
-    border: 1px solid variables.$light_grey_color;
-    background: transparent;
-}
-
-.button--normal{
-    background-color: variables.$medium_grey_color;
 }

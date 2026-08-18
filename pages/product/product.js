@@ -83,7 +83,7 @@ function showProduct(product) {
         return `
             <li>
                 <button type="button" class="product-detail__thumbnail ${activeClass}">
-                    <img src="${image}" alt="${product.title} ${index + 1}" />
+                    <img src="${image}" alt="${product.title} ${index + 1}" class="product-detail__thumbnail-image"/>
                 </button>
             </li>
         `;

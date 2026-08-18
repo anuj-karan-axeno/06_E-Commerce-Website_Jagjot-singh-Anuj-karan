@@ -23,7 +23,7 @@ const modalCloseButton = document.querySelector('.modal__close');
 
 
 const DELIVERY_FEE = 15;
-
+let total;
 const COUPONS = {
     SAVE10: 0.10,
     SAVE20: 0.20
@@ -92,7 +92,7 @@ function updateSummary(cart) {
     const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
     const discountAmount = subtotal * appliedDiscountRate;
     const delivery = cart.length > 0 ? DELIVERY_FEE : 0;
-    const total = subtotal - discountAmount + delivery;
+     total = subtotal - discountAmount + delivery;
 
     subtotalEl.textContent = `$${subtotal.toFixed(0)}`;
     deliveryEl.textContent = `$${delivery}`;
@@ -144,6 +144,9 @@ cartContainer.addEventListener('click', (event) => {
 });
 
 promoButton.addEventListener('click', () => {
+    if(total==0){
+        return
+    }
     const code = promoInput.value.trim().toUpperCase();
 
     if (COUPONS[code]) {

@@ -1,7 +1,8 @@
 export function createProductCard(id, imgURL) {
     const card = document.createElement('li')
+    card.classList.add('product-card__item');
     card.innerHTML = `
-       <a href="./pages/product/product.html?id=${id}">
+       <a href="./pages/product/product.html?id=${id}" class="product-card__link">
                      <article class="product-card">
                          <img src=${imgURL} alt="T-SHIRT WITH TAPE DETAILS"
                              class="product-card__image">

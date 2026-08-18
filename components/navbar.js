@@ -4,47 +4,52 @@ export function createNavbar() {
     navbar.innerHTML = `
     <div class="navbar__offer">
     <div></div> 
-    <p>Sign up and get 20% off to your first order. <span>Sign Up Now</span></p>
-    <img src="/assests/icons/cancel_icon.svg" alt="menu" class="cancel">
+    <p>Sign up and get 20% off to your first order. <span class="navbar__offer-highlight">Sign Up Now</span></p>
+    <img src="/assests/icons/cancel_icon.svg" alt="menu" class="navbar__offer-cancel">
     
     </div>
     <div class="navbar__container">
     <div class="navbar__group">
                 <img src="/assests/icons/hamburger_icon.svg" alt="menu" class="navbar__menu">
-                <a href="/index.html">
+                <a href="/index.html" >
                 <img src="/assests/icons/brand_logo.svg" alt="SHOP.CO" class="navbar__brand-logo">
                 </a>
                 </div>
+
                 <ul class="navbar__links">
-                <li>
-                <a href="#">
-                        Shop <img src="/assests/icons/chevron_down_icon.svg" alt="">
-                        </a>
-                </li>
-                <li>
-                <a href="#">
-                        On Sale
-                    </a>
+                    <li class="navbar__links-item">
+                        <a href="#" class="navbar__links-link">
+                            Shop <img src="/assests/icons/chevron_down_icon.svg" alt="">
+                            </a>
                     </li>
-                <li>
-                    <a href="#">
-                        New Arrivals
+
+                    <li class="navbar__links-item">
+                        <a href="#" class="navbar__links-link">
+                                On Sale
+                            </a>
+                    </li>
+
+                    <li class="navbar__links-item">
+                        <a href="#" class="navbar__links-link">
+                            New Arrivals
+                            </a>
+                    </li>
+
+                    <li class="navbar__links-item">
+                        <a href="#" class="navbar__links-link">
+                            Brands
                         </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Brands
-                    </a>
-                </li>
+                    </li>
             </ul>
+
             <div class="navbar__search">
                 <img src="/assests/icons/search_icon.svg" alt="search">
-                <input type="text" placeholder="Search for products...">
-                </div>
-                <div class="navbar__group">
+                <input type="text" placeholder="Search for products..." class="navbar__search-input">
+            </div>
+
+            <div class="navbar__group">
                 <a href="#">
-                
-                <img src="/assests/icons/black_search_icon.svg" alt="menu" class="navbar__cart-profile__search">
+                    <img src="/assests/icons/black_search_icon.svg" alt="menu" class="navbar__cart-profile__search">
                 </a>
                 <a href="/pages/cart/cart.html">
 
