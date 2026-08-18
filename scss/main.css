@@ -517,6 +517,9 @@
   font-size: 1.25em;
   font-weight: 700;
 }
+.order-summary__row[hidden] {
+  display: none;
+}
 .order-summary__label {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -686,6 +689,20 @@
 .product-card__rating {
   font-size: 0.875em;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+.product-card__star {
+  color: rgba(0, 0, 0, 0.3019607843);
+  font-size: 1.1em;
+  line-height: 1;
+}
+.product-card__star--filled {
+  color: #f4c542;
+}
+.product-card__star--empty {
+  color: rgba(0, 0, 0, 0.3019607843);
 }
 .product-card__price {
   font-size: 1.4em;

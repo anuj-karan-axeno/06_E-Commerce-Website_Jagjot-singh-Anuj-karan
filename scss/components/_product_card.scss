@@ -1,4 +1,5 @@
 @use '../abstracts/mixins' as mixins;
+@use '../abstracts/variables' as variables;
 
 .product-card {
 
@@ -36,6 +37,23 @@
     &__rating {
         font-size: 0.875em;
         font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 0.2em;
+    }
+
+    &__star {
+        color: variables.$grey_color_1;
+        font-size: 1.1em;
+        line-height: 1;
+
+        &--filled {
+            color: variables.$yellow_1;
+        }
+
+        &--empty {
+            color: variables.$grey_color_1;
+        }
     }
 
     &__price {

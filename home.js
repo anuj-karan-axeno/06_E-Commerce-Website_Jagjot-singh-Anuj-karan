@@ -14,6 +14,6 @@ header_group_container.appendChild(createNavbar())
 footer_element.appendChild(createFooter())
 
 products.forEach((item)=>{
-    products_container_element.appendChild(createProductCard(item.id,item.poster_image))
-    top_selling_element.appendChild(createProductCard(item.id,item.poster_image))
+    products_container_element.appendChild(createProductCard(item.id,item.poster_image,item.rating,item.title))
+    top_selling_element.appendChild(createProductCard(item.id,item.poster_image,item.rating,item.title))
 })

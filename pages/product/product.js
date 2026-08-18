@@ -47,7 +47,8 @@ header_element.appendChild(createNavbar());
 footer_element.appendChild(createFooter());
 
 products.forEach((item) => {
-    might_like_container_element.append(createProductCard(item.id, item.poster_image))
+    
+    might_like_container_element.append(createProductCard(item.id, item.poster_image, item.rating,item.title))
 })
 
 function showProduct(product) {

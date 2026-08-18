@@ -150,6 +150,10 @@
                 font-weight: 700;
             }
         }
+
+        &[hidden] {
+            display: none;
+        }
     }
 
     &__label {
